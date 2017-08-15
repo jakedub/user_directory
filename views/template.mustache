@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+        <link rel="stylesheet" href="template.css" >
+  </head>
+  <body>
+    <header><h1>Index</h1></header>
+    <ul class="wrapper">
+      {{#users}}
+      <li><img src="{{avatar}}" />
+        <br />
+        <h1>{{name}}</h1>
+        {{job}}
+        <br />
+        {{company}}
+        <br />
+        {{email}}
+        <br />
+        <p>Education {{university}}</p>
+        <br />
+        <p>Skills {{skills}}</p>
+        <br />
+        {{phone}}
+        <br />
+        {{#address}}
+        <br />
+        {{street_num}}
+        {{street_name}}
+        {{city}}
+        {{state_or_province}}
+        {{postal_code}}
+        {{country}}
+        {{/address}}
+      </li>
+      {{/users}}
+    </ul>
+  </body>
+</html>

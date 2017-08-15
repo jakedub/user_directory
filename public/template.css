@@ -7,7 +7,7 @@ header {
 
 .wrapper{
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 
 .wrapper li{
@@ -19,10 +19,15 @@ header {
 li{
   padding: 5px;
   margin: 5px;
-  flex-grow: 5;
+  flex-grow: 4;
+  display: flex;
 }
 
-p{
-  color: blue;
+h1{
   font-weight: bold;
+}
+
+img{
+  border-radius: 180px;
+  border: 1px solid gray;
 }
