@@ -17,6 +17,7 @@ function hire(){
     return "Available for hire";
   }
 }
+console.log();
 
 app.get('/template', function (req, res) {
   res.render("template", realData);

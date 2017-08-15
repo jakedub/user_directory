@@ -1,6 +1,5 @@
 
 header {
-  margin-left: 10px;
   font-weight: bolder;
 
 }
@@ -21,6 +20,21 @@ li{
   margin: 5px;
   flex-grow: 4;
   display: flex;
+  /*justify-content: center;*/
+  flex-wrap: wrap;
+  max-width: 500px;
+}
+
+span .first{
+  flex-grow: 1;
+}
+
+span .second{
+  flex-grow: 1;
+}
+
+span .third{
+  flex-grow: 1;
 }
 
 h1{
@@ -30,4 +44,5 @@ h1{
 img{
   border-radius: 180px;
   border: 1px solid gray;
+  float: left;
 }
