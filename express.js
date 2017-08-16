@@ -11,15 +11,14 @@ app.get('/user', function (req, res) {
   res.render("user", realData);
 });
 
-function hire(){
-  for (let i=0; i<realData.users.job.length; i++)
-  if (realData[i].users.job === "null"){
-    return "Available for hire";
-  }
-}
-console.log();
-
 app.get('/template', function (req, res) {
+  // let first = mustache.querySelector(".first")
+  // realData.innerHTML = "";
+  // realData.innerHTML = `
+  // <div class="box">
+  // {{user}}
+  // <div>`
+  // first.appendChild(box);
   res.render("template", realData);
 });
 

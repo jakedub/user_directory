@@ -9,12 +9,24 @@
     <header><h1>Index</h1></header>
     <ul class="wrapper">
       {{#users}}
-      <li><img src="{{avatar}}" />
+      <li>
+        <a href="/user/{{id}}" class="userbox">
+        <img src="{{avatar}}" />
         <br />
         <p>{{name}}</p>
-        {{job}}
+        {{#job}}
+        <p class="name">
+          {{job}}, {{company}}
+        </p>
+        {{/job}}
+        {{^job}}
+        <p class="nothing">
+          Available for hire
+        </p>
+        {{/job}}
         <br />
         {{company}}
+        </a>
       </li>
       {{/users}}
     </ul>
